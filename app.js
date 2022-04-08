@@ -5,7 +5,7 @@ const xMen = document.getElementById(`x-men`);
 const centered = document.getElementsByClassName(`center`);
 
 //3
-const batman = document.querySelector(`batman`);
+const batman = document.querySelector(`#batman`);
 
 //4
 const h3s = document.querySelectorAll(`h3`);
@@ -60,3 +60,24 @@ li.remove();
 
 //BONUS
 //13a
+const divs = document.querySelectorAll(`div`);
+
+//13b
+for (d of divs){
+    d.classList.toggle(`background`);
+}
+
+//14a
+const avengers = [
+    "Forever", 
+    "Fight", 
+    "As", 
+    "One", 
+    "AVENGERS", 
+    "ASSEMBLE!"
+];
+
+//14b
+for (a of avengers){
+    body.append(a+` `)
+};
